@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .dockerignore — InfluenceIA backend
+# Files excluded from the Docker build context to keep the image lean and secure
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Local environment — NEVER copy .env into the image
+# APP_KEY and all secrets must be set as Render environment variables
+.env
+.env.*
+!.env.example
+
+# Dev dependencies and local caches
+vendor
+node_modules
+npm-debug.log*
+
+# Test and dev artifacts
+tests
+.phpunit.result.cache
+phpunit.xml
+.editorconfig
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Laravel dev tools (not needed in production image)
+make()
+SETUP.md
+DEPLOYMENT.md
+README.md
+
+# Docker build files themselves (avoid recursion)
+Dockerfile
+.dockerignore
