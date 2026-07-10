@@ -13,9 +13,9 @@
 #   DB_HOST / DB_PORT / DB_DATABASE / DB_USERNAME / DB_PASSWORD
 # ─────────────────────────────────────────────────────────────────────────────
 
-# Debian Bookworm base — stable, well-known package names, no Alpine quirks.
-# php-fpm listens on TCP 127.0.0.1:9000 by default in this official image.
-FROM php:8.3-fpm
+# Debian Bookworm base — must match the PHP version used locally to generate composer.lock.
+# composer.lock pins Symfony 8.1.x which requires php >=8.4.1, so 8.3 fails.
+FROM php:8.4-fpm
 
 LABEL maintainer="InfluenceIA Team"
 
