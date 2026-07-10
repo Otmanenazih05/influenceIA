@@ -63,19 +63,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # ── Composer ──────────────────────────────────────────────────────────────────
 COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
 
-# ── App source code ───────────────────────────────────────────────────────────
 WORKDIR /var/www/html
 
-COPY . .
+# ── Stage 1: Install PHP dependencies ────────────────────────────────────────
+# Copy only composer files first so this layer is cached between deploys
+# (only re-runs when composer.json or composer.lock changes)
+COPY composer.json composer.lock ./
 
-# ── Install PHP dependencies (production only, no dev) ────────────────────────
+# COMPOSER_MEMORY_LIMIT=-1 prevents exit code 2 (OOM) when resolving
+# Laravel's large dependency tree. --no-scripts skips `php artisan package:discover`
+# which cannot run at build time (no .env / APP_KEY available yet).
+ENV COMPOSER_MEMORY_LIMIT=-1
 RUN composer install \
     --no-dev \
-    --optimize-autoloader \
+    --no-scripts \
     --no-interaction \
     --no-progress \
     --prefer-dist \
     && rm -rf /root/.composer/cache
+
+# ── Stage 2: Copy full application code ──────────────────────────────────────
+COPY . .
+
+# Re-generate the optimized autoloader now that all app files are present.
+# Still skip scripts (package:discover runs in docker-entrypoint.sh at runtime).
+RUN composer dump-autoload --no-scripts --optimize --no-dev
 
 # ── Directory permissions ─────────────────────────────────────────────────────
 RUN mkdir -p storage/framework/sessions \
@@ -85,6 +97,7 @@ RUN mkdir -p storage/framework/sessions \
              bootstrap/cache \
     && chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
+
 
 # ── Nginx config ──────────────────────────────────────────────────────────────
 COPY nginx.conf /etc/nginx/nginx.conf

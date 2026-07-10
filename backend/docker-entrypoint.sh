@@ -35,8 +35,11 @@ mkdir -p /run
 echo "==> [entrypoint] Running database migrations..."
 php artisan migrate --force
 
-# ── Clear and rebuild Laravel caches ─────────────────────────────────────────
-echo "==> [entrypoint] Caching config, routes, and views..."
+# ── Rebuild Laravel package manifest and caches ───────────────────────────────
+# package:discover must run here (not at build time) because --no-scripts was
+# used during `composer install` to avoid needing .env during Docker build.
+echo "==> [entrypoint] Discovering packages and caching config/routes/views..."
+php artisan package:discover --ansi
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
