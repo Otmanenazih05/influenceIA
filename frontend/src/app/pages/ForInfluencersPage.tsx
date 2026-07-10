@@ -236,7 +236,7 @@ export function ForInfluencersPage() {
     <div style={{ background: "var(--background)" }}>
 
       {/* ═══ HERO ═══ */}
-      <section style={{ background: "var(--card)", padding: "5rem 1.5rem 6rem", borderBottom: "1px solid var(--border)" }}>
+      <section className="pub-hero-section" style={{ background: "var(--card)", padding: "5rem 1.5rem 6rem", borderBottom: "1px solid var(--border)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ maxWidth: 700, marginBottom: "3.5rem" }}>
             <SectionLabel color="#EDE9FE" textColor="#5B21B6">
@@ -288,11 +288,13 @@ export function ForInfluencersPage() {
           {/* No minimum callout */}
           <div
             style={{
-              display: "inline-flex", alignItems: "center", gap: "0.875rem",
+              display: "flex", alignItems: "center", gap: "0.875rem",
               padding: "0.875rem 1.25rem", borderRadius: "0.875rem",
               background: "#EDE9FE", border: "1px solid #DDD6FE",
+              maxWidth: "100%", boxSizing: "border-box",
             }}
           >
+
             <div
               style={{
                 width: 36, height: 36, borderRadius: "0.625rem",

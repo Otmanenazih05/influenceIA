@@ -303,6 +303,7 @@ export function HomePage() {
 
       {/* ═══ HERO ═══ */}
       <section
+        className="pub-hero-section"
         style={{
           background: "var(--card)",
           padding: "5rem 1.5rem 6rem",
@@ -318,7 +319,7 @@ export function HomePage() {
           }}
         >
           {/* Left: text */}
-          <div style={{ flex: "1 1 480px", maxWidth: 560 }}>
+          <div style={{ flex: "1 1 300px", maxWidth: 560 }}>
             <SectionLabel><Sparkles size={12} /> {t("hero.label")}</SectionLabel>
 
             <h1
@@ -386,9 +387,10 @@ export function HomePage() {
           </div>
 
           {/* Right: product composition */}
-          <div style={{ flex: "1 1 420px", display: "flex", justifyContent: "center" }}>
+          <div style={{ flex: "1 1 300px", display: "flex", justifyContent: "center", maxWidth: "100%" }}>
             <HeroComposition />
           </div>
+
         </div>
       </section>
 
@@ -523,13 +525,13 @@ export function HomePage() {
       </section>
 
       {/* ═══ NANO/MICRO CREATORS ═══ */}
-      <section style={{ padding: "5rem 1.5rem", background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
+      <section className="pub-section" style={{ padding: "5rem 1.5rem", background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div
+          className="pub-two-col-grid"
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center",
+            alignItems: "center",
           }}
-          className="block md:grid"
         >
           <div>
             <SectionLabel><Star size={12} /> {t("nanoMicro.label")}</SectionLabel>
@@ -553,7 +555,7 @@ export function HomePage() {
               ))}
             </div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+          <div className="role-step-grid" style={{ gap: "1rem" }}>
             {[
               { tier: "Nano",  range: "1K – 10K",  eng: "5.8%", color: "#EC4899" },
               { tier: "Micro", range: "10K – 100K", eng: "3.2%", color: "#7C3AED" },
@@ -583,6 +585,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* ═══ STATS ═══ */}
       <section style={{ padding: "5rem 1.5rem", background: "var(--background)", borderBottom: "1px solid var(--border)" }}>

@@ -31,8 +31,24 @@ export function Header() {
 
   return (
     <>
+      <style>{`
+        .pub-nav-desktop { display: flex !important; }
+        .pub-nav-hamburger { display: none !important; }
+        .pub-nav-right-extras { display: flex !important; }
+        .pub-nav-signin { display: inline !important; }
+        .pub-nav-cta { display: inline-flex !important; }
+
+        @media (max-width: 767px) {
+          .pub-nav-desktop { display: none !important; }
+          .pub-nav-hamburger { display: flex !important; }
+          .pub-nav-right-extras { display: none !important; }
+          .pub-nav-signin { display: none !important; }
+          .pub-nav-cta { display: none !important; }
+        }
+      `}</style>
       <header
         style={{
+
           position: "fixed",
           top: 0,
           left: 0,
@@ -61,10 +77,10 @@ export function Header() {
             <Logo iconSize={30} textSize="1.0625rem" />
           </Link>
 
-          {/* Desktop nav */}
+          {/* Desktop nav — hidden on mobile via .pub-nav-desktop CSS class */}
           <nav
-            className="hidden md:flex"
-            style={{ display: "flex", alignItems: "center", gap: "1.25rem" }}
+            className="pub-nav-desktop"
+            style={{ alignItems: "center", gap: "1.25rem" }}
           >
             {navLinks.map((link) => {
               const isActive = link.href !== "/" ? pathname.startsWith(link.href) : pathname === "/";
@@ -94,23 +110,24 @@ export function Header() {
 
           {/* Right actions */}
           <div style={{ display: "flex", alignItems: "center", gap: "0.625rem", flexShrink: 0 }}>
-            <button
-              onClick={() => setTheme(isDark ? "light" : "dark")}
-              style={{
-                width: 34, height: 34, borderRadius: "0.5rem",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                background: "var(--muted)", border: "none", cursor: "pointer",
-                color: "var(--muted-foreground)",
-              }}
-              className="hidden md:flex"
-            >
-              {isDark ? <Sun size={15} /> : <Moon size={15} />}
-            </button>
-            <div className="hidden md:flex">
+            {/* Theme + language — hidden on mobile */}
+            <div className="pub-nav-right-extras" style={{ alignItems: "center", gap: "0.625rem" }}>
+              <button
+                onClick={() => setTheme(isDark ? "light" : "dark")}
+                style={{
+                  width: 34, height: 34, borderRadius: "0.5rem",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  background: "var(--muted)", border: "none", cursor: "pointer",
+                  color: "var(--muted-foreground)",
+                }}
+              >
+                {isDark ? <Sun size={15} /> : <Moon size={15} />}
+              </button>
               <LanguageSwitcher />
             </div>
             <Link
               to="/login"
+              className="pub-nav-signin"
               style={{
                 padding: "0.4375rem 0.875rem",
                 fontFamily: "'Inter', sans-serif",
@@ -119,12 +136,12 @@ export function Header() {
                 color: "var(--muted-foreground)",
                 textDecoration: "none",
               }}
-              className="hidden md:inline"
             >
               {t("nav.signIn")}
             </Link>
             <Link
               to="/register"
+              className="pub-nav-cta"
               style={{
                 padding: "0.5rem 1.125rem",
                 borderRadius: "0.5rem",
@@ -134,7 +151,6 @@ export function Header() {
                 fontSize: "0.875rem",
                 fontWeight: 500,
                 textDecoration: "none",
-                display: "inline-flex",
                 alignItems: "center",
                 gap: "0.375rem",
                 flexShrink: 0,
@@ -142,13 +158,13 @@ export function Header() {
             >
               {t("nav.getStartedFree")}
             </Link>
-            {/* Mobile menu toggle */}
+            {/* Mobile menu toggle — shown only on mobile via .pub-nav-hamburger */}
             <button
-              className="flex md:hidden"
+              className="pub-nav-hamburger"
               onClick={() => setMobileOpen(!mobileOpen)}
               style={{
                 width: 34, height: 34, borderRadius: "0.5rem",
-                display: "flex", alignItems: "center", justifyContent: "center",
+                alignItems: "center", justifyContent: "center",
                 background: "var(--muted)", border: "none", cursor: "pointer",
                 color: "var(--foreground)",
               }}
@@ -210,7 +226,7 @@ export function Header() {
               {t("nav.signIn")}
             </Link>
             <Link
-              to="/contact"
+              to="/register"
               style={{
                 padding: "0.75rem 1rem", borderRadius: "0.5rem",
                 textDecoration: "none", textAlign: "center",
@@ -218,9 +234,27 @@ export function Header() {
                 background: "var(--primary)", color: "#fff",
               }}
             >
-              {t("nav.getStartedFreeLong")}
+              {t("nav.getStartedFree")}
             </Link>
+            {/* Theme + language in drawer */}
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", paddingTop: "0.5rem" }}>
+              <button
+                onClick={() => setTheme(isDark ? "light" : "dark")}
+                style={{
+                  display: "flex", alignItems: "center", gap: "0.5rem",
+                  padding: "0.5rem 0.875rem", borderRadius: "0.5rem",
+                  background: "var(--muted)", border: "none", cursor: "pointer",
+                  color: "var(--foreground)",
+                  fontFamily: "'Inter', sans-serif", fontSize: "0.875rem",
+                }}
+              >
+                {isDark ? <Sun size={15} /> : <Moon size={15} />}
+                {isDark ? "Mode clair" : "Mode sombre"}
+              </button>
+              <LanguageSwitcher />
+            </div>
           </div>
+
         </div>
       )}
 

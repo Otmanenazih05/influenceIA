@@ -156,7 +156,7 @@ export function ForBrandsPage() {
     <div style={{ background: "var(--background)" }}>
 
       {/* ═══ HERO ═══ */}
-      <section style={{ background: "var(--card)", padding: "5rem 1.5rem 6rem", borderBottom: "1px solid var(--border)" }}>
+      <section className="pub-hero-section" style={{ background: "var(--card)", padding: "5rem 1.5rem 6rem", borderBottom: "1px solid var(--border)" }}>
         <div style={{ maxWidth: 1180, margin: "0 auto" }}>
           <div style={{ maxWidth: 700, marginBottom: "3.5rem" }}>
             <SectionLabel><BarChart2 size={12} /> {t("hero.label")}</SectionLabel>
@@ -222,9 +222,9 @@ export function ForBrandsPage() {
         <div
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center",
+            gap: "5rem", alignItems: "center",
           }}
-          className="block md:grid"
+          className="pub-two-col-grid"
         >
           <div>
             <SectionLabel><Sparkles size={12} /> {t("matching.label")}</SectionLabel>

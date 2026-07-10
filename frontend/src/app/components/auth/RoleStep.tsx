@@ -141,7 +141,7 @@ export function RoleStep({
         </p>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }} className="grid-cols-1 sm:grid-cols-2">
+      <div className="role-step-grid" style={{ gap: "1rem" }}>
         {cards.map((c) => {
           const isSelected = selected === c.role;
           return (
