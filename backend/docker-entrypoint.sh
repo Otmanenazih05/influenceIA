@@ -35,6 +35,35 @@ mkdir -p /run
 echo "==> [entrypoint] Running database migrations..."
 php artisan migrate --force
 
+# ── Auto-seed on first deploy (when users table is empty) ─────────────────────
+# Uses PHP PDO directly — no Laravel bootstrap needed, so it works even if
+# config cache is not built yet. Safe: only seeds when user count is 0.
+echo "==> [entrypoint] Checking if initial seeding is needed..."
+SEED_NEEDED=$(php -r "
+try {
+    \$driver   = getenv('DB_CONNECTION') === 'pgsql' ? 'pgsql' : 'mysql';
+    \$host     = getenv('DB_HOST');
+    \$port     = getenv('DB_PORT') ?: (\$driver === 'pgsql' ? '5432' : '3306');
+    \$dbname   = getenv('DB_DATABASE');
+    \$user     = getenv('DB_USERNAME');
+    \$pass     = getenv('DB_PASSWORD');
+    \$pdo      = new PDO(\"\$driver:host=\$host;port=\$port;dbname=\$dbname\", \$user, \$pass);
+    \$count    = \$pdo->query('SELECT COUNT(*) FROM users')->fetchColumn();
+    echo \$count == 0 ? 'yes' : 'no';
+} catch (Exception \$e) {
+    // If table doesn't exist yet (should not happen after migrate), seed anyway
+    echo 'yes';
+}
+" 2>/dev/null || echo "no")
+
+if [ "$SEED_NEEDED" = "yes" ]; then
+    echo "==> [entrypoint] Database is empty — running seeders for initial data..."
+    php artisan db:seed --force
+    echo "==> [entrypoint] Seeding complete."
+else
+    echo "==> [entrypoint] Database already has users — skipping seeder."
+fi
+
 # ── Rebuild Laravel package manifest and caches ───────────────────────────────
 # package:discover must run here (not at build time) because --no-scripts was
 # used during `composer install` to avoid needing .env during Docker build.
