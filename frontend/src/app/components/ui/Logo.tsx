@@ -1,0 +1,97 @@
+import React from "react";
+
+export function LogoIcon({ size = 32, className = "" }: { size?: number; className?: string }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <defs>
+        <linearGradient id="influenceia-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#2563EB" />
+          <stop offset="50%" stopColor="#7C3AED" />
+          <stop offset="100%" stopColor="#EC4899" />
+        </linearGradient>
+      </defs>
+      
+      {/* Head Silhouette Base (Subtle) */}
+      <path
+        d="M50 10 C 25 10, 15 30, 15 50 C 15 70, 25 85, 45 90 C 47 90, 50 88, 50 85 C 50 82, 53 80, 55 83 C 60 88, 65 90, 70 85 C 75 80, 80 85, 85 80 C 90 70, 95 60, 90 40 C 85 20, 75 10, 50 10 Z"
+        fill="none"
+        stroke="url(#influenceia-grad)"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity="0.8"
+      />
+
+      {/* Network Nodes (Lines) */}
+      <path
+        d="M45 15 L35 30 L20 45 L30 65 L40 85"
+        stroke="url(#influenceia-grad)"
+        strokeWidth="1.5"
+        strokeDasharray="4 2"
+      />
+      <path
+        d="M45 15 L60 25 L75 40 L80 60 L60 70 L40 85"
+        stroke="url(#influenceia-grad)"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M35 30 L60 25 L50 45 L75 40 L50 60 L30 65 L50 45"
+        stroke="url(#influenceia-grad)"
+        strokeWidth="1.5"
+      />
+
+      {/* Network Nodes (Dots) */}
+      <circle cx="45" cy="15" r="4" fill="#2563EB" />
+      <circle cx="35" cy="30" r="3.5" fill="#3B82F6" />
+      <circle cx="60" cy="25" r="4" fill="#8B5CF6" />
+      <circle cx="20" cy="45" r="3" fill="#60A5FA" />
+      <circle cx="50" cy="45" r="4.5" fill="#7C3AED" />
+      <circle cx="75" cy="40" r="3.5" fill="#A78BFA" />
+      <circle cx="30" cy="65" r="3" fill="#3B82F6" />
+      <circle cx="50" cy="60" r="4" fill="#EC4899" />
+      <circle cx="80" cy="60" r="3" fill="#F472B6" />
+      <circle cx="40" cy="85" r="4" fill="#2563EB" />
+      <circle cx="60" cy="70" r="3.5" fill="#C084FC" />
+    </svg>
+  );
+}
+
+export function Logo({
+  iconSize = 32,
+  textSize = "1.25rem",
+  color = "var(--foreground)",
+  className = "",
+}: {
+  iconSize?: number;
+  textSize?: string | number;
+  color?: string;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`flex items-center gap-2 select-none ${className}`}
+      style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}
+    >
+      <LogoIcon size={iconSize} />
+      <span
+        style={{
+          fontFamily: "'Poppins', sans-serif",
+          fontWeight: 700,
+          fontSize: textSize,
+          color: color,
+          letterSpacing: "0.05em",
+          lineHeight: 1,
+        }}
+      >
+        INFLUENCI<span style={{ color: "#7C3AED", background: "-webkit-linear-gradient(0deg, #2563EB, #7C3AED)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>A</span>
+      </span>
+    </div>
+  );
+}

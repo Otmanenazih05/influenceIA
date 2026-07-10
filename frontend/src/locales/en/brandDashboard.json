@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "campaigns": "My Campaigns",
+    "creators": "Creator Discovery",
+    "analytics": "Analytics",
+    "payments": "Payments",
+    "messaging": "Messaging",
+    "settings": "Settings",
+    "new_campaign": "New campaign"
+  },
+  "topbar": {
+    "notifications": "Notifications",
+    "all_caught_up": "You're all caught up!",
+    "profile": "Brand Account",
+    "sign_out": "Sign out"
+  }
+}

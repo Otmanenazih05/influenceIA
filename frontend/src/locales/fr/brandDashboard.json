@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "overview": "Vue d'ensemble",
+    "campaigns": "Mes campagnes",
+    "creators": "Découvrir des créateurs",
+    "analytics": "Analyses",
+    "payments": "Paiements",
+    "messaging": "Messagerie",
+    "settings": "Paramètres",
+    "new_campaign": "Nouvelle campagne"
+  },
+  "topbar": {
+    "notifications": "Notifications",
+    "all_caught_up": "Vous êtes à jour !",
+    "profile": "Compte marque",
+    "sign_out": "Se déconnecter"
+  }
+}

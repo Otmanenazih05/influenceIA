@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "overview": "Tableau de bord",
+    "discover": "Découvrir des campagnes",
+    "applications": "Mes candidatures",
+    "marketplace": "Marketplace",
+    "earnings": "Revenus",
+    "calendar": "Calendrier",
+    "aiCoach": "Coach IA",
+    "myProfile": "Mon profil",
+    "messaging": "Messages",
+    "settings": "Paramètres",
+    "tools": "Outils"
+  },
+  "topbar": {
+    "search_placeholder": "Rechercher des campagnes, créateurs…",
+    "my_profile": "Mon profil",
+    "settings": "Paramètres",
+    "sign_out": "Se déconnecter"
+  },
+  "overview": {
+    "good_morning": "Bonjour",
+    "good_afternoon": "Bon après-midi",
+    "good_evening": "Bonsoir",
+    "subtitle": "Voici ce qui se passe avec votre compte créateur aujourd'hui.",
+    "discover_btn": "Découvrir des campagnes",
+    "kpi": {
+      "ai_score": "Score IA",
+      "good": "Bon",
+      "pts_week": "+0 pts cette semaine",
+      "active_collabs": "Collabs Actives",
+      "accepted_apps": "candidatures acceptées",
+      "applications": "Candidatures",
+      "pending": "en attente",
+      "total_earned": "Revenus Totaux",
+      "mad": "MAD",
+      "pending_pay": "En attente",
+      "next_deadline": "Prochaine Échéance",
+      "none": "Aucune",
+      "campaign_deadline": "Échéance de campagne"
+    },
+    "recommended": {
+      "title": "Recommandé pour vous",
+      "view_all": "Tout voir"
+    },
+    "profile_strength": {
+      "title": "Force du profil",
+      "edit": "Modifier",
+      "complete": "complété",
+      "steps_remaining": "étapes restantes pour maximiser votre portée",
+      "step_basic": "Informations de base complétées",
+      "step_ig": "Instagram connecté",
+      "step_photo": "Photo de profil ajoutée",
+      "step_bio": "Biographie rédigée",
+      "step_tiktok": "Connecter le compte TikTok",
+      "step_phone": "Vérifier le numéro de téléphone",
+      "step_portfolio": "Ajouter 2 exemples de portfolio"
+    },
+    "ai_tip": {
+      "title": "Conseil Coach IA",
+      "desc": "Connecter votre compte TikTok pourrait augmenter votre Score IA de ~8 points et doubler vos invitations aux campagnes.",
+      "link": "Ouvrir le Coach IA"
+    }
+  }
+}

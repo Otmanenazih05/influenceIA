@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "label": "Pour les Créateurs",
+    "title1": "Faites-vous découvrir.",
+    "title2": "Collaborez.",
+    "title3": "Soyez payé.",
+    "desc": "Que vous ayez 800 ou 800 000 abonnés, InfluencIA vous connecte aux marques qui valorisent votre voix authentique. Pas d'agences. Pas d'e-mails à froid. Juste de vraies collaborations.",
+    "cta_join": "Rejoindre en tant que créateur",
+    "cta_how": "Comment ça marche",
+    "no_min_title": "Aucun minimum d'abonnés",
+    "no_min_desc": "Nous accueillons les nano-créateurs dès 500 abonnés. La qualité avant la quantité."
+  },
+  "scoreCard": {
+    "desc": "Basé sur l'engagement, la qualité de l'audience, la régularité du contenu et les résultats des campagnes passées.",
+    "tags": {
+      "engagement": "Engagement",
+      "authenticity": "Authenticité",
+      "consistency": "Régularité"
+    }
+  },
+  "campaignFeedPreview": {
+    "title": "Campagnes correspondantes",
+    "updated_live": "Mis à jour en direct"
+  },
+  "how": {
+    "label": "Votre parcours créateur",
+    "title": "Du profil au paiement — en quatre étapes",
+    "steps": [
+      {
+        "title": "Construisez votre profil",
+        "desc": "Liez votre Instagram, TikTok, YouTube ou Facebook. L'IA calcule automatiquement votre Score IA à partir des données réelles de la plateforme."
+      },
+      {
+        "title": "Faites-vous découvrir",
+        "desc": "Les marques qui recherchent des créateurs dans votre niche voient votre profil. Vous recevrez également des invitations directes aux campagnes correspondant à votre score."
+      },
+      {
+        "title": "Postulez et collaborez",
+        "desc": "Parcourez les campagnes correspondantes, soumettez une courte proposition et gérez l'ensemble du processus (brief, révision, rendu) au même endroit."
+      },
+      {
+        "title": "Soyez payé à temps",
+        "desc": "Les paiements sont bloqués sur un compte séquestre dès le premier jour. Une fois votre contenu approuvé, les fonds sont débloqués dans les 48 heures — à chaque fois."
+      }
+    ]
+  },
+  "iaScore": {
+    "label": "Votre Score IA",
+    "title": "Un score qui dit tout — pas seulement le nombre d'abonnés",
+    "desc": "Votre Score IA est calculé à partir de données réelles — taux d'engagement, authenticité de l'audience, signaux de qualité et historique vérifié. Il est mis à jour en temps réel au fur et à mesure que vous grandissez.",
+    "items": [
+      { "label": "Taux d'engagement", "weight": "30%" },
+      { "label": "Authenticité de l'audience", "weight": "25%" },
+      { "label": "Régularité du contenu", "weight": "20%" },
+      { "label": "Résultats passés", "weight": "15%" },
+      { "label": "Complétude du profil", "weight": "10%" }
+    ]
+  },
+  "feed": {
+    "label": "Flux de campagnes",
+    "title": "Des campagnes classées selon leur pertinence pour vous",
+    "desc": "Votre flux met en avant les campagnes selon votre niche, votre score, votre plateforme et vos données démographiques — pas seulement selon le budget. Les meilleures opportunités sont toujours en haut.",
+    "points": [
+      "Triées par l'IA selon le pourcentage de pertinence",
+      "Invitations directes de la part des marques",
+      "Voyez le budget à l'avance — pas de surprises",
+      "Postulez en moins de 2 minutes"
+    ]
+  },
+  "platforms": {
+    "label": "Plateformes",
+    "title": "Liez vos comptes, au même endroit",
+    "p1_follow": "Connecter votre compte IG",
+    "p2_follow": "Synchroniser vos analyses TikTok",
+    "p3_follow": "Lier votre chaîne",
+    "p4_follow": "Connecter la page Facebook",
+    "more": "Bientôt disponibles : LinkedIn, Pinterest, Snapchat"
+  },
+  "payments": {
+    "label": "Paiements",
+    "title": "Soyez payé en toute sécurité, à chaque fois",
+    "desc": "Fini de courir après les marques pour être payé. Les fonds sont bloqués avant même le début de la campagne.",
+    "items": [
+      { "title": "Protection par séquestre", "desc": "Les marques financent les campagnes à l'avance. Votre paiement est garanti avant de commencer à créer." },
+      { "title": "Déblocage sous 48h", "desc": "Dès l'approbation du contenu, les fonds sont automatiquement libérés dans les 48 heures." },
+      { "title": "Retraits flexibles", "desc": "Retirez vers une banque, un portefeuille mobile, ou recevez un crédit plateforme pour des outils." }
+    ]
+  },
+  "testimonials": {
+    "label": "Histoires de créateurs",
+    "title": "Ce qu'en disent les créateurs",
+    "score": "Score"
+  },
+  "cta": {
+    "title_part1": "Votre audience est votre valeur.",
+    "title_part2": "Laissez-nous vous le prouver.",
+    "desc": "Rejoignez plus de 12 000 créateurs qui construisent des partenariats de marque sans agents, sans relances interminables, et sans minimum d'abonnés.",
+    "btn": "Créer votre profil gratuit"
+  }
+}

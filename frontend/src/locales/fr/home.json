@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "label": "Plateforme d'Influence Propulsée par l'IA",
+    "title_part1": "Où les marques rencontrent leur",
+    "title_part2": "créateur idéal",
+    "description": "InfluencIA connecte les marques avec les nano et micro-créateurs grâce au matching par l'IA, à un scoring en temps réel et à une gestion automatisée des campagnes. Aucun nombre minimum d'abonnés requis.",
+    "cta_brand": "Lancer une campagne",
+    "cta_influencer": "Je suis créateur",
+    "social_proof_count": "Plus de 2 500 marques",
+    "social_proof_text": "font confiance à InfluencIA"
+  },
+  "trust": {
+    "label": "Ils nous font confiance au Maroc"
+  },
+  "howItWorks": {
+    "label": "Processus simple",
+    "title": "Deux parcours, une plateforme",
+    "description": "Que vous soyez une marque lançant une campagne ou un créateur construisant sa carrière, InfluencIA a une voie claire pour vous.",
+    "brand": {
+      "title": "Pour les Marques",
+      "steps": [
+        { "title": "Créez votre campagne", "desc": "Définissez votre brief, public cible, plateforme, budget et consignes de contenu — en moins de 10 minutes." },
+        { "title": "L'IA suggère des créateurs", "desc": "Notre moteur de Score IA analyse plus de 50 signaux pour recommander les créateurs parfaits pour votre marque." },
+        { "title": "Approuvez, briefez et lancez", "desc": "Envoyez des contrats, partagez des briefs et gérez toute la collaboration depuis un seul tableau de bord." },
+        { "title": "Suivez les vrais résultats", "desc": "Surveillez la portée, l'engagement, le ROI et les performances du contenu avec des analyses en temps réel." }
+      ],
+      "cta": "En savoir plus pour les marques"
+    },
+    "influencer": {
+      "title": "Pour les Créateurs",
+      "steps": [
+        { "title": "Construisez votre profil", "desc": "Liez vos comptes sociaux, ajoutez votre niche, et laissez l'IA calculer votre Score IA." },
+        { "title": "Faites-vous découvrir", "desc": "Votre score et profil sont montrés aux marques pertinentes. Aucune prospection nécessaire — elles viennent à vous." },
+        { "title": "Postulez et collaborez", "desc": "Parcourez les campagnes correspondantes, soumettez des propositions et gérez les briefs directement sur la plateforme." },
+        { "title": "Soyez payé en toute sécurité", "desc": "Les paiements par étape sont bloqués sous séquestre et débloqués automatiquement dès l'approbation du contenu." }
+      ],
+      "cta": "En savoir plus pour les créateurs"
+    }
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Tout ce dont vous avez besoin pour réussir",
+    "description": "Conçu pour le marketing d'influence moderne — de la découverte au paiement, au même endroit.",
+    "f1": { "title": "Moteur de Score IA", "desc": "Chaque créateur obtient un score composite en temps réel basé sur l'engagement, l'authenticité de l'audience, l'alignement de la niche et l'historique." },
+    "f2": { "title": "Matching de Campagne par l'IA", "desc": "Notre moteur analyse votre brief et classe les créateurs selon leur pertinence prédite — incluant les données démographiques, le ton et la niche." },
+    "f3": { "title": "Hub de Campagne", "desc": "Gestion des briefs, approbation du contenu, fils de révision et programmation — tout le flux de travail de la campagne réuni." },
+    "f4": { "title": "Paiements Sécurisés (Escrow)", "desc": "Le séquestre par étape protège les deux parties. Les fonds sont libérés automatiquement après l'approbation du contenu — finies les relances." },
+    "f5": { "title": "Analyses de Performance", "desc": "Suivez les impressions, la portée, l'engagement et le ROI par créateur et par publication. Exportez les rapports en un clic." },
+    "f6": { "title": "Profils Vérifiés", "desc": "Tous les comptes sont vérifiés via OAuth. Les données d'audience proviennent directement des APIs des plateformes — pas de faux abonnés." }
+  },
+  "nanoMicro": {
+    "label": "Nano & micro-créateurs",
+    "title": "Petite audience, impact massif",
+    "description": "Les nano-créateurs (1K–10K) et micro-créateurs (10K–100K) surpassent régulièrement les méga-influenceurs en termes d'engagement et de confiance. Nous avons construit InfluencIA autour de ce constat.",
+    "points": [
+      "Taux d'engagement moyen de 3 à 8 % contre 1 à 2 % pour les célébrités",
+      "Des audiences ciblées, fidèles et véritablement engagées",
+      "76 % des consommateurs font confiance aux recommandations des nano-créateurs",
+      "Un coût par engagement jusqu'à 6 fois plus intéressant"
+    ],
+    "avgEngagement": "engagement moyen"
+  },
+  "stats": {
+    "label": "Chiffres clés",
+    "title": "Conçu pour l'échelle. Validé par les résultats.",
+    "s1": { "label": "Créateurs vérifiés", "sublabel": "Dans toutes les niches" },
+    "s2": { "label": "ROI moyen", "sublabel": "Sur plus de 500 campagnes" },
+    "s3": { "label": "Taux de satisfaction", "sublabel": "Marques & créateurs" },
+    "s4": { "label": "Délai moyen de match", "sublabel": "Du brief au créateur" }
+  },
+  "pricing": {
+    "label": "Tarifs",
+    "title": "Des tarifs simples et transparents",
+    "description": "Commencez gratuitement. Passez au niveau supérieur quand vous êtes prêt.",
+    "mostPopular": "Le plus populaire",
+    "month": "/mois",
+    "starter": {
+      "desc": "Parfait pour les créateurs et les petites marques qui se lancent.",
+      "f1": "Jusqu'à 3 campagnes actives",
+      "f2": "10 invitations de créateurs/mois",
+      "f3": "Accès de base au Score IA",
+      "f4": "Support de la communauté",
+      "cta": "Commencer gratuitement"
+    },
+    "growth": {
+      "desc": "Pour les marques en croissance prêtes à scaler leur programme.",
+      "f1": "Campagnes illimitées",
+      "f2": "Matching de créateurs par l'IA",
+      "f3": "Analyses et rapports avancés",
+      "f4": "Support prioritaire",
+      "f5": "Paiements sécurisés (Escrow)",
+      "cta": "Commencer l'essai gratuit"
+    },
+    "enterprise": {
+      "desc": "Pour les agences et grandes marques gérant de multiples campagnes.",
+      "f1": "Tout ce qui est inclus dans Croissance",
+      "f2": "Account manager dédié",
+      "f3": "Options en marque blanche",
+      "f4": "Accès API",
+      "f5": "Intégrations sur mesure",
+      "cta": "Contacter les ventes"
+    }
+  },
+  "finalCta": {
+    "title": "Prêt à lancer de meilleures campagnes ?",
+    "description": "Rejoignez plus de 2 500 marques et 12 000 créateurs qui utilisent déjà InfluencIA pour construire des partenariats authentiques et rentables.",
+    "cta_start": "Commencer gratuitement",
+    "cta_talk": "Discutons-en"
+  }
+}

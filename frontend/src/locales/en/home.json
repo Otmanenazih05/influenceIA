@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "label": "AI-Powered Influencer Platform",
+    "title_part1": "Where brands meet their",
+    "title_part2": "perfect creator",
+    "description": "InfluencIA connects brands with nano and micro-influencers through AI-powered matching, real-time scoring, and automated campaign management. No minimum follower count required.",
+    "cta_brand": "Launch a campaign",
+    "cta_influencer": "I'm an influencer",
+    "social_proof_count": "2,500+ brands",
+    "social_proof_text": "trust InfluencIA"
+  },
+  "trust": {
+    "label": "Trusted by brands in Morocco"
+  },
+  "howItWorks": {
+    "label": "Simple process",
+    "title": "Two paths, one platform",
+    "description": "Whether you're a brand launching a campaign or a creator building a career, InfluencIA has a clear path for you.",
+    "brand": {
+      "title": "For Brands",
+      "steps": [
+        { "title": "Create your campaign", "desc": "Set your brief, target audience, platform, budget, and content guidelines — in under 10 minutes." },
+        { "title": "AI suggests matched creators", "desc": "Our IA Score engine analyzes 50+ signals to recommend creators who truly fit your brand." },
+        { "title": "Approve, brief, and launch", "desc": "Send contracts, share briefs, and manage the full collaboration from one dashboard." },
+        { "title": "Track real results", "desc": "Monitor reach, engagement, ROI, and content performance with live analytics." }
+      ],
+      "cta": "Learn more for brands"
+    },
+    "influencer": {
+      "title": "For Influencers",
+      "steps": [
+        { "title": "Build your creator profile", "desc": "Link your social accounts, add your niche, and let the AI calculate your IA Score." },
+        { "title": "Get discovered by brands", "desc": "Your score and profile are shown to relevant brands. No outreach needed — they come to you." },
+        { "title": "Apply and collaborate", "desc": "Browse matching campaigns, submit proposals, and manage briefs directly in the platform." },
+        { "title": "Get paid securely", "desc": "Milestone-based payments are held in escrow and released automatically upon content approval." }
+      ],
+      "cta": "Learn more for creators"
+    }
+  },
+  "features": {
+    "label": "Platform features",
+    "title": "Everything you need to run great campaigns",
+    "description": "Built for modern influencer marketing — from discovery to payment, in one place.",
+    "f1": { "title": "IA Score Engine", "desc": "Every creator gets a real-time composite score based on engagement, audience authenticity, niche alignment, and past campaign history." },
+    "f2": { "title": "AI Campaign Matching", "desc": "Our engine analyzes your brief and ranks creators by predicted fit — audience demographics, tone, and niche alignment included." },
+    "f3": { "title": "Campaign Hub", "desc": "Brief management, content approval, revision threads, and go-live scheduling — every campaign workflow in one place." },
+    "f4": { "title": "Escrow Payments", "desc": "Milestone-based escrow protects both sides. Funds are released automatically when content is approved — no invoice chasing." },
+    "f5": { "title": "Performance Analytics", "desc": "Track impressions, reach, engagement, and ROI per creator and per post. Export reports for stakeholders in one click." },
+    "f6": { "title": "Verified Profiles", "desc": "All accounts are verified via OAuth. Audience data is pulled directly from platform APIs — no fake followers, no inflated numbers." }
+  },
+  "nanoMicro": {
+    "label": "Nano & micro creators",
+    "title": "Small audience, massive impact",
+    "description": "Nano influencers (1K–10K) and micro influencers (10K–100K) consistently outperform mega-influencers on engagement and trust. We built InfluencIA around this insight from day one.",
+    "points": [
+      "3–8% average engagement rate vs 1–2% for celebrities",
+      "Audiences that are niche, loyal, and genuinely engaged",
+      "76% of consumers trust nano influencer recommendations",
+      "Up to 6× better cost-per-engagement than macro creators"
+    ],
+    "avgEngagement": "avg engagement"
+  },
+  "stats": {
+    "label": "Platform numbers",
+    "title": "Built for scale. Trusted by results.",
+    "s1": { "label": "Verified creators", "sublabel": "Across all niches" },
+    "s2": { "label": "Average ROI", "sublabel": "Across 500+ campaigns" },
+    "s3": { "label": "Satisfaction rate", "sublabel": "Brands & influencers" },
+    "s4": { "label": "Avg time to match", "sublabel": "From brief to creator" }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Simple, transparent pricing",
+    "description": "Start for free. Upgrade when you're ready.",
+    "mostPopular": "Most popular",
+    "month": "/month",
+    "starter": {
+      "desc": "Perfect for creators and small brands getting started.",
+      "f1": "Up to 3 active campaigns",
+      "f2": "10 creator invitations/month",
+      "f3": "Basic IA Score access",
+      "f4": "Community support",
+      "cta": "Get started free"
+    },
+    "growth": {
+      "desc": "For growing brands ready to scale their influencer program.",
+      "f1": "Unlimited campaigns",
+      "f2": "AI-powered creator matching",
+      "f3": "Advanced analytics & reporting",
+      "f4": "Priority support",
+      "f5": "Secure escrow payments",
+      "cta": "Start free trial"
+    },
+    "enterprise": {
+      "desc": "For agencies and large brands managing multiple campaigns.",
+      "f1": "Everything in Growth",
+      "f2": "Dedicated account manager",
+      "f3": "White-label options",
+      "f4": "API access",
+      "f5": "Custom integrations",
+      "cta": "Contact sales"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to run smarter campaigns?",
+    "description": "Join 2,500+ brands and 12,000+ creators already using InfluencIA to build authentic partnerships that deliver real ROI.",
+    "cta_start": "Get started free",
+    "cta_talk": "Talk to us"
+  }
+}

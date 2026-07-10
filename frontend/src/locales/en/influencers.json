@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "label": "For Creators",
+    "title1": "Get discovered.",
+    "title2": "Collaborate.",
+    "title3": "Get paid.",
+    "desc": "Whether you have 800 followers or 800K, InfluencIA connects you with brands that value your authentic voice. No agents. No cold emails. Just real collaborations.",
+    "cta_join": "Join as a creator",
+    "cta_how": "How it works",
+    "no_min_title": "No minimum follower count",
+    "no_min_desc": "We welcome nano creators from 500 followers. Quality over quantity."
+  },
+  "scoreCard": {
+    "desc": "Based on engagement, audience quality, content consistency, and past campaign results.",
+    "tags": {
+      "engagement": "Engagement",
+      "authenticity": "Authenticity",
+      "consistency": "Consistency"
+    }
+  },
+  "campaignFeedPreview": {
+    "title": "Matching Campaigns",
+    "updated_live": "Updated live"
+  },
+  "how": {
+    "label": "Your creator journey",
+    "title": "From profile to paid — in four steps",
+    "steps": [
+      {
+        "title": "Build your profile",
+        "desc": "Link your Instagram, TikTok, YouTube, or Facebook. The AI calculates your IA Score automatically based on real platform data."
+      },
+      {
+        "title": "Get discovered",
+        "desc": "Brands searching for creators in your niche see your profile. You'll also receive direct campaign invitations matched to your score."
+      },
+      {
+        "title": "Apply and collaborate",
+        "desc": "Browse matching campaigns, submit a short proposal, and manage the full brief, review, and content submission workflow in one place."
+      },
+      {
+        "title": "Get paid on time",
+        "desc": "Payments are held in escrow from day one. Once your content is approved, funds are released within 48 hours — every time."
+      }
+    ]
+  },
+  "iaScore": {
+    "label": "Your IA Score",
+    "title": "A score that tells the full story — not just follower count",
+    "desc": "Your IA Score is calculated from real platform data — engagement rate, audience authenticity, content quality signals, and verified past campaign results. It's updated in real time as you grow.",
+    "items": [
+      { "label": "Engagement rate", "weight": "30%" },
+      { "label": "Audience authenticity", "weight": "25%" },
+      { "label": "Content consistency", "weight": "20%" },
+      { "label": "Past campaign results", "weight": "15%" },
+      { "label": "Profile completeness", "weight": "10%" }
+    ]
+  },
+  "feed": {
+    "label": "Campaign feed",
+    "title": "Campaigns ranked by how well they fit you",
+    "desc": "Your feed surfaces campaigns based on your niche, score, platform, audience demographics, and past performance — not just budget. The best opportunities are always at the top.",
+    "points": [
+      "AI-sorted by match percentage",
+      "Direct invitations from brands",
+      "See budget upfront — no surprises",
+      "Apply in under 2 minutes"
+    ]
+  },
+  "platforms": {
+    "label": "Platforms",
+    "title": "Link your accounts, all in one place",
+    "p1_follow": "Connect your IG account",
+    "p2_follow": "Sync TikTok analytics",
+    "p3_follow": "Link your channel",
+    "p4_follow": "Connect Facebook page",
+    "more": "More platforms coming soon: LinkedIn, Pinterest, Snapchat"
+  },
+  "payments": {
+    "label": "Payments",
+    "title": "Get paid securely, every time",
+    "desc": "No more chasing brands for payment. Funds are held in escrow before the campaign starts.",
+    "items": [
+      { "title": "Escrow protection", "desc": "Brands fund campaigns upfront. Your payment is guaranteed before you create." },
+      { "title": "48h release", "desc": "Once content is approved, funds are released within 48 hours automatically." },
+      { "title": "Flexible withdrawal", "desc": "Withdraw to bank, mobile wallet, or receive a platform credit for tools." }
+    ]
+  },
+  "testimonials": {
+    "label": "Creator stories",
+    "title": "What creators say",
+    "score": "Score"
+  },
+  "cta": {
+    "title_part1": "Your audience is your value.",
+    "title_part2": "Let us prove it.",
+    "desc": "Join 12,000+ creators who are building brand partnerships without agents, without begging, and without followers minimums.",
+    "btn": "Create your free profile"
+  }
+}

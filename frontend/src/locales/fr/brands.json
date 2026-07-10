@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "label": "Pour les Marques",
+    "title1": "Trouvez vos créateurs parfaits.",
+    "title2": "Mesurez chaque résultat.",
+    "desc": "Lancez des campagnes d'influence en toute confiance. Créateurs associés par l'IA, données d'audience vérifiées, paiements automatisés et rapports de ROI en temps réel — le tout sur une seule plateforme.",
+    "cta_launch": "Lancer votre première campagne",
+    "cta_how": "Voir comment ça marche",
+    "metrics": [
+      { "value": "3.7×", "label": "ROI moyen" },
+      { "value": "72h", "label": "Temps jusqu'au premier match" },
+      { "value": "98%", "label": "Satisfaction des campagnes" }
+    ]
+  },
+  "matching": {
+    "label": "Matching IA",
+    "title": "Arrêtez de deviner. Commencez à matcher.",
+    "desc": "Notre IA analyse votre brief de campagne, votre audience cible, votre ton et votre secteur pour classer chaque créateur selon sa pertinence réelle — pas seulement selon son nombre d'abonnés ou son prix.",
+    "points": [
+      "Analyse des données démographiques et des intérêts de l'audience",
+      "Évaluation de l'alignement du style et du ton du contenu",
+      "Prise en compte des performances des campagnes passées",
+      "Détection intégrée des faux abonnés",
+      "Résultats classés selon la conversion prédite"
+    ],
+    "top_matches": "Meilleurs matchs pour : \"Beauté · Femmes 25–40 · Maroc\"",
+    "match_text": "match",
+    "score_text": "Score"
+  },
+  "workflow": {
+    "label": "Workflow de campagne",
+    "title": "Du brief au contenu en ligne — entièrement géré",
+    "steps": [
+      {
+        "title": "Créez votre brief de campagne",
+        "desc": "Définissez vos objectifs, audience cible, directives de contenu, plateformes et budget. L'IA pré-remplit des suggestions selon le profil de votre marque."
+      },
+      {
+        "title": "Examinez les matchs proposés par l'IA",
+        "desc": "Obtenez une liste restreinte de créateurs classés par score de pertinence. Consultez leurs profils, travaux passés et données d'audience avant de décider."
+      },
+      {
+        "title": "Invitez, briefez et approuvez",
+        "desc": "Envoyez des invitations, partagez des briefs, gérez les Q&R, et approuvez ou demandez des révisions sur le contenu soumis — tout dans un seul fil."
+      },
+      {
+        "title": "Suivez les performances en temps réel",
+        "desc": "Surveillez la portée, les impressions, les clics et les conversions par créateur. Voyez quelles publications performent le mieux et pourquoi."
+      },
+      {
+        "title": "Paiements gérés automatiquement",
+        "desc": "Le séquestre est libéré une fois le contenu approuvé. Pas de factures, pas de retards, pas de litiges. Tout est consigné sur la plateforme."
+      }
+    ],
+    "approval_title": "Flux d'approbation du contenu",
+    "approval_steps": [
+      "Brief envoyé",
+      "Contenu soumis",
+      "En cours de révision",
+      "Approuvé & en ligne"
+    ]
+  },
+  "resultCard": {
+    "title": "Lancement Skincare",
+    "subtitle": "14 créateurs · 28 jours",
+    "status": "Terminé",
+    "metrics": [
+      { "label": "Impressions", "value": "1.4M" },
+      { "label": "Engagements", "value": "58K" },
+      { "label": "ROI", "value": "4.1×" }
+    ]
+  },
+  "nano": {
+    "label": "L'avantage nano",
+    "title": "Pourquoi 73% de nos campagnes de marque utilisent des nano-créateurs",
+    "desc": "Les grands noms génèrent de la notoriété. Les petites voix de confiance génèrent de la conversion. InfluencIA facilite la gestion des deux.",
+    "items": [
+      {
+        "title": "Engagement 3 à 8× plus élevé",
+        "desc": "Les nano-créateurs génèrent systématiquement 3 à 8% d'engagement contre 1 à 2% pour les célébrités. Votre contenu est réellement vu et incite à l'action."
+      },
+      {
+        "title": "Ciblage hyper-nichée",
+        "desc": "Un nano-créateur de la communauté fitness de Casablanca atteint exactement l'audience dont vous avez besoin — pas une population générale diluée."
+      },
+      {
+        "title": "Confiance authentique",
+        "desc": "76% des consommateurs font confiance aux recommandations des nano-influenceurs. Ils sont perçus comme des amis, pas comme des publicités."
+      },
+      {
+        "title": "Une échelle rentable",
+        "desc": "Pour le prix d'une macro-campagne, vous pouvez mener 10 à 15 nano-campagnes et atteindre des audiences plus engagées et ciblées."
+      }
+    ]
+  },
+  "analytics": {
+    "label": "Reporting",
+    "title": "Prouvez le ROI. Exportez tout.",
+    "desc": "Chaque campagne est accompagnée d'un rapport de performance complet : répartition par créateur, données au niveau du contenu, analyse des chevauchements d'audience et tableaux de bord exportables pour vos parties prenantes.",
+    "metrics": [
+      { "metric": "1.4M", "label": "Impressions totales" },
+      { "metric": "4.1×", "label": "ROI mesuré" },
+      { "metric": "58K", "label": "Engagements" },
+      { "metric": "14", "label": "Créateurs actifs" }
+    ],
+    "points": [
+      "Répartition des performances en direct par créateur",
+      "Impressions et engagement au niveau du contenu",
+      "Données démographiques de l'audience par post",
+      "Suivi des clics et des conversions",
+      "Rapports exportables au format PDF et CSV",
+      "Partage de tableaux de bord prêt pour les parties prenantes"
+    ]
+  },
+  "cta": {
+    "title": "Votre prochaine campagne est à 72 heures d'ici.",
+    "desc": "Créez un brief, obtenez des créateurs matchés par l'IA, lancez-vous — et commencez à voir des résultats en moins d'une semaine.",
+    "btn1": "Commencer gratuitement",
+    "btn2": "Réserver une démo"
+  }
+}

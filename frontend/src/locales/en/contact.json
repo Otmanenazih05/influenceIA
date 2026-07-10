@@ -1,0 +1,91 @@
+{
+  "faqs": [
+    {
+      "q": "Do I need a minimum number of followers to join as a creator?",
+      "a": "No. InfluencIA welcomes creators from 500 followers. What matters is your engagement quality and audience authenticity — both of which are reflected in your IA Score, not your follower count."
+    },
+    {
+      "q": "How is the IA Score calculated?",
+      "a": "Your IA Score is a composite metric built from your real platform data: engagement rate (30%), audience authenticity (25%), content consistency (20%), past campaign results (15%), and profile completeness (10%). It updates in real time."
+    },
+    {
+      "q": "How does payment work for influencers?",
+      "a": "Brands fund campaigns upfront via escrow before any work begins. Once your content is approved, payment is released automatically within 48 hours — no invoices, no chasing, no delays."
+    },
+    {
+      "q": "As a brand, how long does it take to find matching creators?",
+      "a": "Our AI delivers an initial shortlist within a few minutes of receiving your brief. Most brands receive their first collaboration confirmed within 72 hours."
+    },
+    {
+      "q": "What platforms are supported for creator profiles?",
+      "a": "Currently Instagram, TikTok, YouTube, and Facebook. LinkedIn, Pinterest, and Snapchat integrations are on the roadmap."
+    },
+    {
+      "q": "Can I run campaigns with both nano and macro influencers?",
+      "a": "Yes. InfluencIA supports creators across all tiers — from nano (500–10K) to micro (10K–100K) to macro (100K+). You can mix tiers within a single campaign."
+    },
+    {
+      "q": "Is there a free plan?",
+      "a": "Yes. The Starter plan is free and lets brands run up to 3 active campaigns with 10 creator invitations per month. Creators can always join and apply for free."
+    },
+    {
+      "q": "How does InfluencIA verify that follower counts are authentic?",
+      "a": "All social accounts are connected via official OAuth APIs. Our IA Score's authenticity component uses proprietary analysis to flag suspicious follower patterns — this data is shown transparently on every creator profile."
+    },
+    {
+      "q": "What regions does InfluencIA operate in?",
+      "a": "We're currently focused on Morocco and the broader North Africa / Francophone region. Expansion to the Middle East and Sub-Saharan Africa is planned for 2025."
+    },
+    {
+      "q": "How do I get support if something goes wrong with a campaign?",
+      "a": "All plans include access to our support team via in-platform chat. Growth and Enterprise plans get priority response times. Critical campaign issues are handled within 4 hours."
+    }
+  ],
+  "hero": {
+    "label": "Get in touch",
+    "title": "Let's build something together",
+    "desc": "Whether you're a brand ready to launch your first campaign, a creator wanting to get discovered, or a partner looking to collaborate — we're here."
+  },
+  "form": {
+    "submitted_title": "Message received!",
+    "submitted_desc": "Our team will get back to you within 24 hours. In the meantime, feel free to explore the platform.",
+    "btn_another": "Send another message",
+    "title": "Send us a message",
+    "desc": "Fill in the form and we'll be in touch within 24 hours.",
+    "role_label": "I am a…",
+    "role_brand": "Brand / Agency",
+    "role_creator": "Creator / Influencer",
+    "role_other": "Other",
+    "fn_label": "First name",
+    "fn_ph": "Your first name",
+    "ln_label": "Last name",
+    "ln_ph": "Your last name",
+    "email_label": "Email address",
+    "email_ph": "you@company.com",
+    "company_label": "Company / Brand name",
+    "company_ph": "GlowLab Morocco",
+    "handle_label": "Instagram or TikTok handle",
+    "handle_ph": "@yourhandle",
+    "help_label": "How can we help?",
+    "help_ph_brand": "Tell us about your campaign goals, target audience, or questions…",
+    "help_ph_creator": "Tell us about your niche, platforms, and what kind of collaborations you're looking for…",
+    "help_ph_other": "How can we help?",
+    "btn_send": "Send message",
+    "policy": "By submitting, you agree to our Privacy Policy. We don't spam."
+  },
+  "sidebar": {
+    "title": "Contact info",
+    "email": "hello@influencia.ai",
+    "address": "Casablanca, Morocco",
+    "reply": "Reply within 24 hours",
+    "for_brands_title": "For brands",
+    "for_brands_desc": "Looking to run a campaign? Mention your budget and target audience and we'll send a personalized creator shortlist within 24h.",
+    "for_creators_title": "For creators",
+    "for_creators_desc": "Share your Instagram or TikTok handle and we'll calculate your IA Score preview before you even create an account."
+  },
+  "faq_section": {
+    "label": "FAQ",
+    "title": "Frequently asked questions",
+    "desc": "Can't find your answer? Reach out directly — we respond within 24 hours."
+  }
+}

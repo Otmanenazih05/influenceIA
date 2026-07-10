@@ -1,0 +1,91 @@
+{
+  "faqs": [
+    {
+      "q": "Ai-je besoin d'un nombre minimum d'abonnés pour rejoindre en tant que créateur ?",
+      "a": "Non. InfluencIA accueille les créateurs à partir de 500 abonnés. Ce qui compte, c'est la qualité de votre engagement et l'authenticité de votre audience — deux éléments qui se reflètent dans votre Score IA, et non dans votre nombre d'abonnés."
+    },
+    {
+      "q": "Comment le Score IA est-il calculé ?",
+      "a": "Votre Score IA est une métrique composite construite à partir de vos données réelles sur les plateformes : taux d'engagement (30%), authenticité de l'audience (25%), régularité du contenu (20%), résultats des campagnes passées (15%) et complétude du profil (10%). Il se met à jour en temps réel."
+    },
+    {
+      "q": "Comment fonctionne le paiement pour les influenceurs ?",
+      "a": "Les marques financent les campagnes à l'avance via un compte séquestre avant le début de tout travail. Une fois votre contenu approuvé, le paiement est libéré automatiquement dans les 48 heures — pas de factures, pas de relances, pas de retards."
+    },
+    {
+      "q": "En tant que marque, combien de temps faut-il pour trouver des créateurs correspondants ?",
+      "a": "Notre IA propose une première sélection en quelques minutes après réception de votre brief. La plupart des marques voient leur première collaboration confirmée dans les 72 heures."
+    },
+    {
+      "q": "Quelles plateformes sont prises en charge pour les profils de créateurs ?",
+      "a": "Actuellement Instagram, TikTok, YouTube et Facebook. Les intégrations LinkedIn, Pinterest et Snapchat sont prévues."
+    },
+    {
+      "q": "Puis-je mener des campagnes avec à la fois des nano et des macro-influenceurs ?",
+      "a": "Oui. InfluencIA prend en charge les créateurs de tous niveaux — du nano (500–10K) au micro (10K–100K) en passant par le macro (100K+). Vous pouvez mélanger les niveaux au sein d'une même campagne."
+    },
+    {
+      "q": "Existe-t-il un forfait gratuit ?",
+      "a": "Oui. Le forfait Starter est gratuit et permet aux marques de mener jusqu'à 3 campagnes actives avec 10 invitations de créateurs par mois. Les créateurs peuvent toujours s'inscrire et postuler gratuitement."
+    },
+    {
+      "q": "Comment InfluencIA vérifie-t-il que le nombre d'abonnés est authentique ?",
+      "a": "Tous les comptes sociaux sont connectés via des API OAuth officielles. La composante authenticité de notre Score IA utilise une analyse exclusive pour signaler les modèles d'abonnés suspects — ces données sont affichées de manière transparente sur chaque profil de créateur."
+    },
+    {
+      "q": "Dans quelles régions InfluencIA opère-t-il ?",
+      "a": "Nous sommes actuellement concentrés sur le Maroc et la région élargie d'Afrique du Nord / francophone. Une expansion au Moyen-Orient et en Afrique subsaharienne est prévue pour 2025."
+    },
+    {
+      "q": "Comment obtenir de l'aide en cas de problème avec une campagne ?",
+      "a": "Tous les forfaits incluent l'accès à notre équipe d'assistance via le chat intégré à la plateforme. Les forfaits Growth et Enterprise bénéficient de délais de réponse prioritaires. Les problèmes critiques de campagne sont traités dans les 4 heures."
+    }
+  ],
+  "hero": {
+    "label": "Contactez-nous",
+    "title": "Construisons quelque chose ensemble",
+    "desc": "Que vous soyez une marque prête à lancer sa première campagne, un créateur souhaitant être découvert ou un partenaire cherchant à collaborer — nous sommes là."
+  },
+  "form": {
+    "submitted_title": "Message reçu !",
+    "submitted_desc": "Notre équipe vous répondra sous 24 heures. En attendant, n'hésitez pas à explorer la plateforme.",
+    "btn_another": "Envoyer un autre message",
+    "title": "Envoyez-nous un message",
+    "desc": "Remplissez le formulaire et nous vous contacterons sous 24 heures.",
+    "role_label": "Je suis un(e)…",
+    "role_brand": "Marque / Agence",
+    "role_creator": "Créateur / Influenceur",
+    "role_other": "Autre",
+    "fn_label": "Prénom",
+    "fn_ph": "Votre prénom",
+    "ln_label": "Nom",
+    "ln_ph": "Votre nom de famille",
+    "email_label": "Adresse e-mail",
+    "email_ph": "vous@entreprise.com",
+    "company_label": "Nom de l'entreprise / marque",
+    "company_ph": "GlowLab Maroc",
+    "handle_label": "Identifiant Instagram ou TikTok",
+    "handle_ph": "@votreidentifiant",
+    "help_label": "Comment pouvons-nous vous aider ?",
+    "help_ph_brand": "Parlez-nous de vos objectifs de campagne, de votre audience cible ou de vos questions…",
+    "help_ph_creator": "Parlez-nous de votre niche, de vos plateformes et des types de collaborations que vous recherchez…",
+    "help_ph_other": "Comment pouvons-nous vous aider ?",
+    "btn_send": "Envoyer le message",
+    "policy": "En soumettant ce formulaire, vous acceptez notre Politique de Confidentialité. Pas de spam."
+  },
+  "sidebar": {
+    "title": "Coordonnées",
+    "email": "hello@influencia.ai",
+    "address": "Casablanca, Maroc",
+    "reply": "Réponse sous 24 heures",
+    "for_brands_title": "Pour les marques",
+    "for_brands_desc": "Vous souhaitez lancer une campagne ? Mentionnez votre budget et votre audience cible et nous vous enverrons une sélection de créateurs personnalisée sous 24h.",
+    "for_creators_title": "Pour les créateurs",
+    "for_creators_desc": "Partagez votre identifiant Instagram ou TikTok et nous calculerons un aperçu de votre Score IA avant même que vous ne créiez un compte."
+  },
+  "faq_section": {
+    "label": "FAQ",
+    "title": "Questions fréquemment posées",
+    "desc": "Vous ne trouvez pas votre réponse ? Contactez-nous directement — nous répondons sous 24 heures."
+  }
+}

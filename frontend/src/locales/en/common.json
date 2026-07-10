@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "forBrands": "For Brands",
+    "forInfluencers": "For Influencers",
+    "pricing": "Pricing",
+    "signIn": "Sign in",
+    "getStartedFree": "Get started free",
+    "getStartedFreeLong": "Get started — it's free"
+  },
+  "footer": {
+    "platform": "Platform",
+    "aiScore": "AI Score",
+    "marketplace": "Marketplace",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "press": "Press",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookieSettings": "Cookie Settings",
+    "description": "The AI-powered platform connecting brands with nano and micro-influencers for authentic, measurable campaigns.",
+    "copyright": "© 2024 InfluencIA. All rights reserved.",
+    "madeWithCare": "Made with care in Casablanca 🇲🇦"
+  }
+}

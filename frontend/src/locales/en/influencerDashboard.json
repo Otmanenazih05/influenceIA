@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "discover": "Discover Campaigns",
+    "applications": "My Applications",
+    "marketplace": "Marketplace",
+    "earnings": "Earnings",
+    "calendar": "Calendar",
+    "aiCoach": "AI Coach",
+    "myProfile": "My Profile",
+    "messaging": "Messaging",
+    "settings": "Settings",
+    "tools": "Tools"
+  },
+  "topbar": {
+    "search_placeholder": "Search campaigns, creators…",
+    "my_profile": "My Profile",
+    "settings": "Settings",
+    "sign_out": "Sign out"
+  },
+  "overview": {
+    "good_morning": "Good morning",
+    "good_afternoon": "Good afternoon",
+    "good_evening": "Good evening",
+    "subtitle": "Here's what's happening with your creator account today.",
+    "discover_btn": "Discover campaigns",
+    "kpi": {
+      "ai_score": "IA Score",
+      "good": "Good",
+      "pts_week": "+0 pts this week",
+      "active_collabs": "Active Collabs",
+      "accepted_apps": "accepted applications",
+      "applications": "Applications",
+      "pending": "pending",
+      "total_earned": "Total Earned",
+      "mad": "MAD",
+      "pending_pay": "Pending Pay.",
+      "next_deadline": "Next Deadline",
+      "none": "None",
+      "campaign_deadline": "Campaign deadline"
+    },
+    "recommended": {
+      "title": "Recommended for you",
+      "view_all": "View all"
+    },
+    "profile_strength": {
+      "title": "Profile strength",
+      "edit": "Edit",
+      "complete": "complete",
+      "steps_remaining": "steps remaining to maximize your reach",
+      "step_basic": "Basic info complete",
+      "step_ig": "Instagram linked",
+      "step_photo": "Profile photo added",
+      "step_bio": "Bio written",
+      "step_tiktok": "Link TikTok account",
+      "step_phone": "Verify phone number",
+      "step_portfolio": "Add 2 portfolio examples"
+    },
+    "ai_tip": {
+      "title": "AI Coach tip",
+      "desc": "Linking your TikTok account could increase your IA Score by ~8 points and double your campaign invitations.",
+      "link": "Open AI Coach"
+    }
+  }
+}

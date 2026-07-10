@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "forBrands": "Pour les Marques",
+    "forInfluencers": "Pour les Créateurs",
+    "pricing": "Tarifs",
+    "signIn": "Se connecter",
+    "getStartedFree": "Commencer gratuitement",
+    "getStartedFreeLong": "Commencer — c'est gratuit"
+  },
+  "footer": {
+    "platform": "Plateforme",
+    "aiScore": "Score IA",
+    "marketplace": "Place de Marché",
+    "company": "Entreprise",
+    "about": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "press": "Presse",
+    "legal": "Légal",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookieSettings": "Paramètres des cookies",
+    "description": "La plateforme propulsée par l'IA connectant les marques aux nano et micro-créateurs pour des campagnes authentiques et mesurables.",
+    "copyright": "© 2024 InfluencIA. Tous droits réservés.",
+    "madeWithCare": "Fait avec passion à Casablanca 🇲🇦"
+  }
+}

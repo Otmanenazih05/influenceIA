@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "label": "For Brands",
+    "title1": "Find your perfect creators.",
+    "title2": "Measure every result.",
+    "desc": "Launch influencer campaigns with confidence. AI-matched creators, verified audience data, automated payments, and real-time ROI reporting — all in one platform.",
+    "cta_launch": "Launch your first campaign",
+    "cta_how": "See how it works",
+    "metrics": [
+      { "value": "3.7×", "label": "Average ROI" },
+      { "value": "72h", "label": "Time to first creator match" },
+      { "value": "98%", "label": "Campaign satisfaction" }
+    ]
+  },
+  "matching": {
+    "label": "AI Matching",
+    "title": "Stop guessing. Start matching.",
+    "desc": "Our AI analyzes your campaign brief, target audience, tone, and vertical to rank every creator by how well they actually fit — not just by follower count or price.",
+    "points": [
+      "Audience demographics and interests analyzed",
+      "Content style and tone alignment scored",
+      "Past campaign performance factored in",
+      "Fake follower detection built-in",
+      "Results ranked by predicted conversion"
+    ],
+    "top_matches": "Top matches for: \"Skincare · Women 25–40 · Morocco\"",
+    "match_text": "match",
+    "score_text": "Score"
+  },
+  "workflow": {
+    "label": "Campaign workflow",
+    "title": "From brief to live content — fully managed",
+    "steps": [
+      {
+        "title": "Create your campaign brief",
+        "desc": "Set your goals, target audience, content guidelines, platforms, and budget. AI pre-fills suggestions based on your brand profile."
+      },
+      {
+        "title": "Review AI-ranked creator matches",
+        "desc": "Get a shortlist of creators ranked by fit score. Review their profiles, past work, and audience data before making any decisions."
+      },
+      {
+        "title": "Invite, brief, and approve",
+        "desc": "Send collaboration invites, share briefs, manage Q&A, and approve or request revisions on submitted content — all in one thread."
+      },
+      {
+        "title": "Track performance in real time",
+        "desc": "Monitor reach, impressions, clicks, and conversions per creator. See which posts outperform and why."
+      },
+      {
+        "title": "Payments handled automatically",
+        "desc": "Escrow is released when content is approved. No invoices, no delays, no disputes. Everything is logged in the platform."
+      }
+    ],
+    "approval_title": "Content approval flow",
+    "approval_steps": [
+      "Brief sent",
+      "Content submitted",
+      "Under review",
+      "Approved & live"
+    ]
+  },
+  "resultCard": {
+    "title": "Skincare Lancement",
+    "subtitle": "14 creators · 28 days",
+    "status": "Completed",
+    "metrics": [
+      { "label": "Impressions", "value": "1.4M" },
+      { "label": "Engagements", "value": "58K" },
+      { "label": "ROI", "value": "4.1×" }
+    ]
+  },
+  "nano": {
+    "label": "The nano advantage",
+    "title": "Why 73% of our brand campaigns use nano creators",
+    "desc": "Big names drive awareness. Small, trusted voices drive conversion. InfluencIA makes it easy to run both.",
+    "items": [
+      {
+        "title": "3–8× higher engagement",
+        "desc": "Nano creators consistently generate 3–8% engagement vs 1–2% for celebrities. Your content is actually seen and acted on."
+      },
+      {
+        "title": "Hyper-niche targeting",
+        "desc": "A nano creator in Casablanca's fitness community reaches exactly the audience you need — not a diluted general population."
+      },
+      {
+        "title": "Authentic trust",
+        "desc": "76% of consumers trust nano influencer recommendations. They're perceived as friends, not advertisements."
+      },
+      {
+        "title": "Cost-effective scale",
+        "desc": "For the price of one macro campaign, you can run 10–15 nano campaigns and reach more engaged, targeted audiences."
+      }
+    ]
+  },
+  "analytics": {
+    "label": "Reporting",
+    "title": "Prove ROI. Export everything.",
+    "desc": "Every campaign comes with a full performance report: per-creator breakdowns, content-level data, audience overlap analysis, and exportable dashboards for your stakeholders.",
+    "metrics": [
+      { "metric": "1.4M", "label": "Total impressions" },
+      { "metric": "4.1×", "label": "Measured ROI" },
+      { "metric": "58K", "label": "Engagements" },
+      { "metric": "14", "label": "Active creators" }
+    ],
+    "points": [
+      "Live per-creator performance breakdown",
+      "Content-level impressions and engagement",
+      "Audience demographics per post",
+      "Click and conversion tracking",
+      "Exportable PDF and CSV reports",
+      "Stakeholder-ready dashboard sharing"
+    ]
+  },
+  "cta": {
+    "title": "Your next campaign is 72 hours away.",
+    "desc": "Create a brief, get AI-matched creators, launch — and start seeing results within a week.",
+    "btn1": "Start free",
+    "btn2": "Book a demo"
+  }
+}
