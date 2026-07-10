@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # InfluenceIA — Production Dockerfile
-# Runtime: PHP 8.3-FPM + Nginx (single container, Alpine Linux)
+# Runtime: PHP 8.3-FPM + Nginx (single container, Debian Bookworm)
 # Target platform: Render.com web service (Docker)
 #
 # IMPORTANT — before deploying, set these environment variables in Render:
@@ -9,45 +9,56 @@
 #   APP_DEBUG        = false
 #   APP_URL          = https://<your-service>.onrender.com
 #   FRONTEND_URL     = https://<your-frontend>.vercel.app
-#   DB_CONNECTION    = mysql (or pgsql)
+#   DB_CONNECTION    = mysql  (or pgsql if using Postgres)
 #   DB_HOST / DB_PORT / DB_DATABASE / DB_USERNAME / DB_PASSWORD
 # ─────────────────────────────────────────────────────────────────────────────
 
-FROM php:8.3-fpm-alpine
+# Debian Bookworm base — stable, well-known package names, no Alpine quirks.
+# php-fpm listens on TCP 127.0.0.1:9000 by default in this official image.
+FROM php:8.3-fpm
 
 LABEL maintainer="InfluenceIA Team"
 
-# ── System dependencies ───────────────────────────────────────────────────────
-RUN apk add --no-cache \
-    nginx \
-    supervisor \
-    curl \
-    git \
-    zip \
-    unzip \
-    oniguruma-dev \
-    libxml2-dev \
-    libzip-dev \
-    icu-dev \
-    freetype-dev \
-    libjpeg-turbo-dev \
-    libpng-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install \
+# ── System dependencies (Debian apt package names) ───────────────────────────
+# libonig-dev  → mbstring
+# libxml2-dev  → xml
+# libzip-dev   → zip
+# libicu-dev   → intl
+# libfreetype6-dev + libjpeg62-turbo-dev + libpng-dev → GD
+# libpq-dev    → pdo_pgsql (kept for Postgres flexibility; Aiven MySQL only needs pdo_mysql)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        nginx \
+        supervisor \
+        curl \
+        git \
+        zip \
+        unzip \
+        libonig-dev \
+        libxml2-dev \
+        libzip-dev \
+        libicu-dev \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libpq-dev \
+    && docker-php-ext-configure gd \
+        --with-freetype \
+        --with-jpeg \
+    && docker-php-ext-install -j$(nproc) \
         pdo \
         pdo_mysql \
         pdo_pgsql \
         mbstring \
         xml \
-        ctype \
         bcmath \
-        tokenizer \
         zip \
         pcntl \
         fileinfo \
         intl \
         gd \
-    && rm -rf /var/cache/apk/*
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+# Note: ctype and tokenizer are compiled into PHP 8.x core — no separate install needed
 
 # ── Composer ──────────────────────────────────────────────────────────────────
 COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
