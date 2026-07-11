@@ -394,11 +394,11 @@ export function ForInfluencersPage() {
       {/* ═══ IA SCORE ═══ */}
       <section style={{ padding: "5rem 1.5rem", background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div
+          className="pub-two-col-grid"
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center",
+            alignItems: "center",
           }}
-          className="block md:grid"
         >
           <div>
             <SectionLabel color="#EDE9FE" textColor="#5B21B6"><Star size={12} /> {t("iaScore.label")}</SectionLabel>
@@ -441,11 +441,11 @@ export function ForInfluencersPage() {
       {/* ═══ CAMPAIGN FEED PREVIEW ═══ */}
       <section style={{ padding: "5rem 1.5rem", background: "var(--background)", borderBottom: "1px solid var(--border)" }}>
         <div
+          className="pub-two-col-grid"
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center",
+            alignItems: "center",
           }}
-          className="block md:grid"
         >
           <div>
             <CampaignFeedPreview />

@@ -440,6 +440,7 @@ export function DashboardShell() {
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
   const mainRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -449,6 +450,13 @@ export function DashboardShell() {
     el.addEventListener("scroll", handler);
     return () => el.removeEventListener("scroll", handler);
   }, []);
+
+  useEffect(() => {
+    if (mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [pathname]);
+
 
   return (
     <div style={{ position: "fixed", inset: 0, display: "flex", height: "100dvh", overflow: "hidden", background: "var(--background)" }}>

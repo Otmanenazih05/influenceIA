@@ -427,7 +427,7 @@ export function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1px 1fr", gap: "3rem", alignItems: "start" }} className="block md:grid">
+          <div className="pub-three-col-split" style={{ alignItems: "start" }}>
             {/* Brands path */}
             <div>
               <div

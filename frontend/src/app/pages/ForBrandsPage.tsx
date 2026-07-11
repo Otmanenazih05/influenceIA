@@ -267,11 +267,11 @@ export function ForBrandsPage() {
       {/* ═══ CAMPAIGN WORKFLOW ═══ */}
       <section id="workflow" style={{ padding: "5rem 1.5rem", background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div
+          className="pub-two-col-grid"
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "start",
+            alignItems: "start",
           }}
-          className="block md:grid"
         >
           <div>
             <SectionLabel><Zap size={12} /> {t("workflow.label")}</SectionLabel>
@@ -409,11 +409,11 @@ export function ForBrandsPage() {
       {/* ═══ ANALYTICS ═══ */}
       <section style={{ padding: "5rem 1.5rem", background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div
+          className="pub-two-col-grid"
           style={{
             maxWidth: 1180, margin: "0 auto",
-            display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5rem", alignItems: "center",
+            alignItems: "center",
           }}
-          className="block md:grid"
         >
           <div>
             <SectionLabel><BarChart2 size={12} /> {t("analytics.label")}</SectionLabel>
@@ -428,7 +428,7 @@ export function ForBrandsPage() {
             <p style={{ fontFamily: font.body, fontSize: "0.9375rem", color: "var(--muted-foreground)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
               {t("analytics.desc")}
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.875rem" }}>
+            <div className="role-step-grid" style={{ gap: "0.875rem" }}>
               {[0, 1, 2, 3].map((idx) => (
                 <div key={idx} style={{ background: "var(--background)", border: "1px solid var(--border)", borderRadius: "0.75rem", padding: "1rem" }}>
                   <p style={{ fontFamily: font.heading, fontWeight: 800, fontSize: "1.5rem", color: "var(--foreground)", letterSpacing: "-0.03em" }}>{t(`analytics.metrics.${idx}.metric`)}</p>

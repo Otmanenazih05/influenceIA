@@ -6,6 +6,12 @@ import { Footer } from "./components/marketing/Footer";
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
+
+  useEffect(() => {
     if (hash) {
       // Small timeout to allow element to render first
       setTimeout(() => {
@@ -17,10 +23,13 @@ function ScrollToTop() {
       }, 100);
     } else {
       window.scrollTo(0, 0);
+      document.documentElement.scrollTo(0, 0);
+      document.body.scrollTo(0, 0);
     }
   }, [pathname, hash]);
   return null;
 }
+
 
 export function Root() {
   return (

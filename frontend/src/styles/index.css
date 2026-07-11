@@ -38,6 +38,7 @@ html, body {
 .pub-two-col-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
+  gap: 5rem !important;
 }
 @media (max-width: 860px) {
   .pub-two-col-grid {
@@ -45,6 +46,21 @@ html, body {
     gap: 2.5rem !important;
   }
 }
+
+/* ── Three-column split grid (How It Works parent layout) ────────────────── */
+.pub-three-col-split {
+  display: grid !important;
+  grid-template-columns: 1fr 1px 1fr !important;
+  gap: 3rem !important;
+}
+@media (max-width: 860px) {
+  .pub-three-col-split {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+
 
 /* ── Role step grid: stack on mobile ─────────────────────────────────────── */
 .role-step-grid {
