@@ -4,7 +4,7 @@ import {
   Calendar, DollarSign, Users, Target, Zap, Instagram,
   Play, Youtube, Facebook, Clock, Shield, Info,
 } from "lucide-react";
-import type { Campaign } from "./CampaignsPage";
+import type { Campaign } from "../../pages/dashboard/CampaignsPage";
 import api from "../../../lib/api";
 
 import { TiktokIcon, InstagramIcon, YoutubeIcon, FacebookIcon } from "../ui/SocialIcons";
@@ -195,7 +195,8 @@ export function CampaignDrawer({
           top: 0,
           right: 0,
           width: "min(520px, 100vw)",
-          height: "100vh",
+          height: "100dvh",
+          maxHeight: "100dvh",
           background: "var(--card)",
           zIndex: 70,
           display: "flex",
@@ -206,6 +207,7 @@ export function CampaignDrawer({
         }}
       >
         <style>{`@keyframes slideIn { from { transform: translateX(40px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }`}</style>
+
 
         {/* Drawer header */}
         <div style={{ padding: "1rem 1.25rem", borderBottom: "1px solid var(--border)", display: "flex", alignItems: "center", justifyContent: "space-between", flexShrink: 0 }}>
@@ -375,7 +377,7 @@ export function CampaignDrawer({
         </div>
 
         {/* Sticky footer */}
-        <div style={{ padding: "1rem 1.25rem", borderTop: "1px solid var(--border)", background: "var(--card)", flexShrink: 0, display: "flex", gap: "0.625rem" }}>
+        <div style={{ padding: "1rem 1.25rem", paddingBottom: "calc(1rem + env(safe-area-inset-bottom, 0px))", borderTop: "1px solid var(--border)", background: "var(--card)", flexShrink: 0, display: "flex", gap: "0.625rem" }}>
           <button
             onClick={() => setSaved((s) => !s)}
             style={{ flex: "0 0 auto", padding: "0.6875rem 1rem", borderRadius: "0.5rem", border: "1px solid var(--border)", background: saved ? "#EDE9FE" : "var(--card)", color: saved ? "#7C3AED" : "var(--muted-foreground)", cursor: "pointer", fontFamily: f.b, fontSize: "0.875rem", fontWeight: 500, display: "flex", alignItems: "center", gap: "0.375rem" }}
