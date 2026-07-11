@@ -156,9 +156,10 @@ function Topbar({ onMenuOpen, scrolled }: { onMenuOpen: () => void; scrolled: bo
         <div className="hidden sm:flex">
           <LanguageSwitcher />
         </div>
-        <Link to="/brand/campaigns/new" className="hidden md:inline-flex" style={{ display: "inline-flex", alignItems: "center", gap: "0.375rem", padding: "0.4375rem 0.875rem", borderRadius: "0.5rem", background: "var(--primary)", color: "#fff", textDecoration: "none", fontFamily: f.b, fontSize: "0.8125rem", fontWeight: 500, boxShadow: "0 2px 6px rgba(37,99,235,0.22)" }}>
+        <Link to="/brand/campaigns/new" className="hidden md:inline-flex" style={{ alignItems: "center", gap: "0.375rem", padding: "0.4375rem 0.875rem", borderRadius: "0.5rem", background: "var(--primary)", color: "#fff", textDecoration: "none", fontFamily: f.b, fontSize: "0.8125rem", fontWeight: 500, boxShadow: "0 2px 6px rgba(37,99,235,0.22)" }}>
           <Plus size={13} /> {t("nav.new_campaign")}
         </Link>
+
         <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} style={{ width: 32, height: 32, borderRadius: "0.375rem", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--muted)", border: "none", cursor: "pointer", color: "var(--muted-foreground)" }}>
           {theme === "dark" ? <Sun size={14} /> : <Moon size={14} />}
         </button>
