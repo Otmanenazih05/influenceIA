@@ -225,10 +225,11 @@ export function BrandShell() {
     return () => el.removeEventListener("scroll", handler);
   }, []);
   return (
-    <div style={{ display: "flex", height: "100vh", overflow: "hidden", background: "var(--background)" }}>
-      <div className="hidden lg:flex" style={{ height: "100vh", position: "sticky", top: 0, zIndex: 40, flexShrink: 0 }}>
+    <div style={{ position: "fixed", inset: 0, display: "flex", height: "100dvh", overflow: "hidden", background: "var(--background)" }}>
+      <div className="hidden lg:flex" style={{ height: "100%", position: "sticky", top: 0, zIndex: 40, flexShrink: 0 }}>
         <Sidebar collapsed={collapsed} onToggle={() => setCollapsed((c) => !c)} />
       </div>
+
       {mobileOpen && (
         <>
           <div onClick={() => setMobileOpen(false)} style={{ position: "fixed", inset: 0, zIndex: 40, background: "rgba(0,0,0,0.35)" }} />

@@ -451,11 +451,13 @@ export function DashboardShell() {
   }, []);
 
   return (
-    <div style={{ display: "flex", height: "100vh", overflow: "hidden", background: "var(--background)" }}>
+    <div style={{ position: "fixed", inset: 0, display: "flex", height: "100dvh", overflow: "hidden", background: "var(--background)" }}>
       {/* Desktop sidebar */}
-      <div className="hidden lg:flex" style={{ height: "100vh", position: "sticky", top: 0, zIndex: 40, flexShrink: 0 }}>
+
+      <div className="hidden lg:flex" style={{ height: "100%", position: "sticky", top: 0, zIndex: 40, flexShrink: 0 }}>
         <Sidebar collapsed={collapsed} onToggle={() => setCollapsed((c) => !c)} />
       </div>
+
 
       {/* Mobile sidebar overlay */}
       {mobileOpen && (
